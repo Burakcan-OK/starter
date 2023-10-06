@@ -13,7 +13,99 @@
   padding-right:10px;
   margin-right: 20px;
 }
+#header{
+  background-color: #495E57;
+  display: grid;
+  grid-template-areas: "head  picture"
+                       "head2 picture"
+                       "text picture"
+                       "but picture" ;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 60px 60px 60px 60px;
+  padding: 7%;
+
+}
+#header > h1,h2{
+  color: #F4CE14;
+}
+#header > h1{
+  grid-area: head;
+}
+#header >h2{
+  grid-area: head2;
+}
+#header > article {
+  grid-area: text;
+  margin-top: 10px;
+}
+ #header > button {
+  grid-area: but;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #F4CE14;
+  font-size: larger;
+  height: 50px;
+  width: 160px;
+  margin-left: 40px;
+} 
+#header > img {
+  grid-area: picture;
+  margin-left: 15%;
+  border-radius: 10%;
+}
+#main{
+  margin: 30px;
+  display: grid;
+  grid-template-areas:"section1"
+                      "section2"
+                      "section2"
+                      "section2"
+                      "section2" ;
+  grid-template-rows: 1fr 4fr;
+}
+#main-sec1{
+  grid-area: section1;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 50px;
+}
+#main-sec1 > h1{
+  margin-right: 160px;
+  margin-left: 20px;
+}
+#main-sec1 > button{
+  height: fit-content;
+  border-radius: 5px;
+}
+#main-sec2{
+  grid-area: section2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #495E57;
+}
+#main-article{
+  font-size: 10px;
+  font-style: italic;
+  width: 100px;
+}
+#main-img {
+  border-radius: 5px;
+}
+#main-h4{
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button{
+  background-color: #F4CE14;
+  font-size: larger;
+}
 #footer {
  font-family: cursive;
   font-size: xx-small;
+  margin: 20px;
 }
