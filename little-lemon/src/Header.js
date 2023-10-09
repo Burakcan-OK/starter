@@ -9,7 +9,7 @@ export function Header () {
             We are a family owned Mediterranean restaurant, focused on traditional reciepe served with a modern twist.
         </article>
         <button width="50px" >Reserve a Table</button>
-        <img src={restaurant} width="250" height="310" alt="retaurnt image" />
+        <img id="header-img" src={restaurant} width="65%" height="135%" alt="restaurant" />
     </header>
     )
 }

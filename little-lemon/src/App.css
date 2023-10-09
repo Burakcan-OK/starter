@@ -6,12 +6,18 @@
   list-style-type: none;
 }
 #nav-ul {
-  margin-left: 3px;
-  font-size: 14px;
+  font-size: 12px;
+  margin: auto;
 }
 #nav-li{
-  padding-right:10px;
-  margin-right: 20px;
+  padding-right:1%;
+  margin-right: 2%;
+}
+#nav-img {
+  transition: transform .7s ease-in-out;
+}
+#nav-img:hover {
+  transform: rotate(360deg);
 }
 #header{
   background-color: #495E57;
@@ -20,8 +26,8 @@
                        "head2 picture"
                        "text picture"
                        "but picture" ;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 60px 60px 60px 60px;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: (4, 25%);
   padding: 7%;
 
 }
@@ -44,17 +50,18 @@
   border-radius: 10px;
   background-color: #F4CE14;
   font-size: larger;
-  height: 50px;
-  width: 160px;
-  margin-left: 40px;
+  height: 60%;
+  width: 80%;
+  margin-left: 10%;
 } 
 #header > img {
   grid-area: picture;
   margin-left: 15%;
-  border-radius: 10%;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 #main{
-  margin: 30px;
+  margin: 30%;
   display: grid;
   grid-template-areas:"section1"
                       "section2"
@@ -68,7 +75,7 @@
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: 50px;
+  padding: 10%;
 }
 #main-sec1 > h1{
   margin-right: 160px;
@@ -93,6 +100,7 @@
 }
 #main-img {
   border-radius: 5px;
+  border: 1px solid black;
 }
 #main-h4{
   font-size: 12px;
@@ -104,8 +112,92 @@ button{
   background-color: #F4CE14;
   font-size: larger;
 }
-#footer {
- font-family: cursive;
+.maint-sec1{
+  display: grid;
+  grid-template-areas:"tes  tes tes"
+                      "pp pp1 pp2"
+                      "pp pp1 pp2"
+                      "pp pp1 pp2";
+  background-color: #F4CE14;
+  grid-template-columns: (3, 1fr);
+  grid-template-rows: (4, 1fr);
+  /* padding-left: 15%; */
+  align-self: center;
+  font-size: 60%;
+}
+#maint-h{
+  grid-area: tes;
+ justify-self: center;
+}
+#pp{
+  grid-area: pp;
+}
+#pp1{
+  grid-area: pp1;
+}
+#pp2{
+  grid-area: pp2;
+}
+.maint-sec2{
+  padding-left: 25%;
+
+}
+.maint-sec3{
+  display: grid;
+  grid-template-areas: "hd  pic"
+                       "hd2 pic"
+                       "txt pic";
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: (3, 20%);
+  background-color: #495E57;
+  padding: 7%;
+  font-size: 70%;
+}
+.maint-sec3 >h1{
+  grid-area: hd;
+  color: #F4CE14;
+}
+.maint-sec3 >h3{
+  grid-area: hd2;
+}
+.maint-sec3 >p{
+  grid-area: txt;
+  
+}
+.maint-sec3 >img{
+  grid-area: pic;
+  border-radius: 10px;
+  margin: auto;
+  border: 1px solid black;
+}
+#footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 80%;
+  margin: 3%;
+}
+.foot {
+  font-family: cursive;
   font-size: xx-small;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.foot {
+  transition: transform .7s ease-in-out;
+}
+.foot:hover {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+    #main-article, #main-img, #main-h4{
+      width: 80%;
+      margin-left: 5%;
+    }
+    #header-img{
+      height: 80%;
+      width: 90%;
+}
 }
