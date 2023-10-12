@@ -6,7 +6,7 @@
   list-style-type: none;
 }
 #nav-ul {
-  font-size: 12px;
+  font-size: 65%;
   margin: auto;
 }
 #nav-li{
@@ -121,13 +121,15 @@ button{
   background-color: #F4CE14;
   grid-template-columns: (3, 1fr);
   grid-template-rows: (4, 1fr);
-  /* padding-left: 15%; */
+  padding: 5%; 
   align-self: center;
-  font-size: 60%;
+  font-size: 80%;
 }
 #maint-h{
   grid-area: tes;
+  font-size: 250%;
  justify-self: center;
+ 
 }
 #pp{
   grid-area: pp;
@@ -152,6 +154,7 @@ button{
   background-color: #495E57;
   padding: 7%;
   font-size: 70%;
+
 }
 .maint-sec3 >h1{
   grid-area: hd;

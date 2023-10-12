@@ -17,7 +17,8 @@ export function Main () {
                         <h4 style={{color:"red"}}>$ 12.99</h4>
                     </div>
                     <article id="main-article">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Refreshing salad, made with tomato, lettuce, feta cheese, and olives.
+                 Dressed with salt, hot pepper, and olive oil.
                     </article>
                     <article style={{padding:"5px"}}>Order a delivery </article>
                 </div>
@@ -28,7 +29,8 @@ export function Main () {
                         <h4 style={{color:"red"}} >$ 5.99</h4>
                     </div>
                     <article id="main-article">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Toasted bread, topped with tomato, prosciutto, and cheese. Seasoned with
+                 salt and olive oil.
                     </article>
                     <article style={{padding:"5px"}}>Order a delivery </article>
                 </div>
@@ -39,7 +41,8 @@ export function Main () {
                         <h4 style={{color:"red"}}>$ 5.00</h4>
                     </div>
                     <article id="main-article">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Fresh baked lemon bread coated in salt and sugar. Powdered in citrus
+                 and lemon zest.
                     </article>
                     <article style={{padding:"5px"}} >Order a delivery </article>
                 </div>

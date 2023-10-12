@@ -1,28 +1,25 @@
 import '../../App.css';
 import pp from '../../assets/pp.jpg'
 import restaurant from '../../assets/restaurant.jpg'
-export function Maintwo () {
+export function MainTwo () {
     return(
         <main class="maint-sec">
-            <div class="maint-sec1">
+            <div style={{fontSize:"lager"}} class="maint-sec1">
                 <h1 id="maint-h">Testimonials</h1>
                 <section id="pp" class="maint-sec2">
-                    <p>Rating</p>
-                    <img src={pp} height="30%" width="30%" ></img>
-                    <p>Lores</p>
-                    <p>Ipsum dolor </p>
+                    <p>Micheal Caldwell</p>
+                    <img src={pp} height="30%" width="30%" alt='' ></img>
+                    <p>This is the best Mediterranean food that I've ever had!</p>
                 </section>
                 <section id="pp1" class="maint-sec2">
-                    <p>Rating</p>
-                    <img src={pp} height="30%" width="30%" ></img>
-                    <p>Lores</p>
-                    <p>Ipsum dolor </p>
+                    <p>Alan Chen</p>
+                    <img src={pp} height="30%" width="30%" alt='' ></img>
+                    <p>My Shiba Inu, Mugi, really loved the cozy vibes and delicious food here</p>
                 </section>
                 <section id="pp2" class="maint-sec2">
-                    <p>Rating</p>
-                    <img src={pp} height="30%" width="30%" ></img>
-                    <p>Lores</p>
-                    <p>Ipsum dolor </p>
+                    <p>Casey Lau</p>
+                    <img src={pp} height="30%" width="30%" alt='' ></img>
+                    <p>I've had some great Mediterranean food before, but none of them beats Little Lemon in flavor and texture.</p>
                 </section>
             </div>
             <div class="maint-sec3">
@@ -30,15 +27,11 @@ export function Maintwo () {
                     <h1>Little Lemon</h1>
                     <h3>Chicago</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                        magna aliqua.Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                    Little Lemon opened in 1995 by two Italian brothers, Adrian and Mario.
+                    Despite the city's diversity, the two brothers recognized the lack of Mediterranean cuisine in Chicago, 
+                    and were inspired to bring the flavors of their hometown in Italy to the people of Chicago. The two brothers 
+                    continue to oversee the Little Lemon restaurant, nearly thirty years later.
                     </p>
-                    
                 </section>
                 <img src={restaurant} width="70%" />
                 <section>

@@ -1,3 +1,4 @@
+import {HomePage} from './sections/HomePage'
 import { Main } from './sections/Main';
 import { Header } from './sections/Header';
 import { BookingPage } from './sections/BookingPage';
@@ -7,7 +8,7 @@ import { Routes, Route} from 'react-router-dom';
 export function Routing () {
     return(
         <Routes>
-            <Route path='/' element={<Header/>} />
+            <Route path='/' element={<HomePage/>} />
             <Route path='/about' element={<Header/>} />
             <Route path='/specials' element={<Main/>} />
             <Route path='/CustomerSays' element={<CustomerSays/>} />
