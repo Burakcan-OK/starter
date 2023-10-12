@@ -1,7 +1,7 @@
-import './App.css';
-import salad from './salad.jpg'
-import brucshetta from './brucshetta.jpg'
-import dessert from './lemon_dessert.jpg'
+import '../../App.css';
+import salad from '../../assets/salad.jpg'
+import brucshetta from '../../assets/brucshetta.jpg'
+import dessert from '../../assets/lemon_dessert.jpg'
 export function Main () {
     return (
         <main style={{color:"black"}}>

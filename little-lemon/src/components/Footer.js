@@ -1,10 +1,10 @@
-import './App.css';
-import logo from './logo.png'
+import '../App.css';
+import logo from '../assets/logo.png'
 export function Footer () {
     return (
         <footer id="footer">
             <div class="foot">
-                <img id="foot-img" src={logo} height="30" width="30" />
+                <img id="foot-img" src={logo} height="30" width="30" alt='' />
                 <p>copyright LITTLE LEMON</p>
             </div>
             <div >

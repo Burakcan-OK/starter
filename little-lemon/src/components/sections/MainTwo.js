@@ -1,6 +1,6 @@
-import './App.css';
-import pp from './pp.jpg'
-import restaurant from './restaurant.jpg'
+import '../../App.css';
+import pp from '../../assets/pp.jpg'
+import restaurant from '../../assets/restaurant.jpg'
 export function Maintwo () {
     return(
         <main class="maint-sec">

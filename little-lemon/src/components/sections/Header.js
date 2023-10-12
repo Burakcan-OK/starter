@@ -1,5 +1,5 @@
-import './App.css';
-import restaurant from './restaurant.jpg'
+import '../../App.css';
+import restaurant from '../../assets/restaurant.jpg'
 export function Header () {
     return (
     <header id="header">
