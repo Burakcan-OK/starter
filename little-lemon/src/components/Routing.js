@@ -4,6 +4,7 @@ import { Header } from './sections/Header';
 import { BookingPage } from './sections/BookingPage';
 import { Chicago } from './sections/Chicago';
 import { CustomerSays } from './sections/CustomerSays';
+import Confirmation from './sections/Confirmation'
 import { Routes, Route} from 'react-router-dom';
 export function Routing () {
     return(
@@ -14,6 +15,7 @@ export function Routing () {
             <Route path='/CustomerSays' element={<CustomerSays/>} />
             <Route path='/Chicago' element={<Chicago/>} />
             <Route path='/BookingPage' element={<BookingPage/>} />
+            <Route path='/Confirmation' element={<Confirmation/>} />
         </Routes>
     )
 }

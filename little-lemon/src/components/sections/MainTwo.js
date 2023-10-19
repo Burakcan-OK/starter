@@ -23,7 +23,8 @@ export function MainTwo () {
                 </section>
             </div>
             <div class="maint-sec3">
-                <section style={{color:"#F4CE14"}} >
+                <section style={{color:"#F4CE14",
+                                fontSize:"150%"}} >
                     <h1>Little Lemon</h1>
                     <h3>Chicago</h3>
                     <p>
@@ -33,7 +34,7 @@ export function MainTwo () {
                     continue to oversee the Little Lemon restaurant, nearly thirty years later.
                     </p>
                 </section>
-                <img src={restaurant} width="70%" />
+                <img src={restaurant} alt='' width="70%" />
                 <section>
 
                 </section>
