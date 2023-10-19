@@ -174,23 +174,48 @@ button{
   margin: auto;
   border: 1px solid black;
 }
+#book-h1{
+  color: #F4CE14;
+  text-align: center;
+  font-family: "Karla";
+  transition: .7s ease-in-out;
+}
+#book-h1 :hover{
+  transform: rotateY(360deg);
+}
 form label {
-  font-size: 150% ;
+  font-size: 100% ;
   color:#F4CE14;
   margin: auto;
+  padding-top: 5%;
+  max-height: 20px;
+}
+form input,select {
+  color:#495E57;
+  min-height: 200%;
+  text-align: center;
 }
 .booking-form {
   display:grid;
   max-width: 500px;
-  gap: 30px;
+  gap: 15px;
   margin:auto;
   background-color:#495E57;
   border-radius: 10px;
 }
-#date, #time, #guests, #occasion {
+.FieldError {
   color: red;
-  min-height: 200%;
+  font-size: 12px;
   text-align: center;
+  margin-bottom: -150%;
+}
+sup {
+  color: red;
+  top: -2px;
+  font-size: 95%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 .confirmation-header {
   position: relative;
@@ -233,8 +258,6 @@ form label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.foot {
   transition: .7s ease-in-out;
 }
 .foot:hover {

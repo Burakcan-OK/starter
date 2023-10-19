@@ -1,16 +1,27 @@
 import '../../App.css';
 import {useState} from "react"
 import { useNavigate } from "react-router-dom";
-
+import {validateEmail} from "../utils"
+const DateErrorMessage =() => {
+    return(
+        <p className='FieldError'>Please choose an appropriate date</p>
+    )
+}
 export function BookingForm (props) {
     const [form, setForm] =useState({
         date:"",
         time:"",
         number:"",
-        type:"type"
+        type:"type",
+        name:"",
+        surname:"",
+        phone:"",
+        email:"",
+        isTouched: false
     })
     const getIsFormValid = () => {
-        return(form.date &&  form.type !=="type"
+        return(form.date &&  form.type !=="type" 
+               && form.name && form.surname && validateEmail(form.email)
         )
     }
     const clearForm=() => {
@@ -19,7 +30,13 @@ export function BookingForm (props) {
             date:"",
             time:"",
             number:"",
-            type:"type"}
+            type:"type",
+            name:"",
+            surname:"",
+            phone:"",
+            email:"",
+            isTouched:false
+        }
         )
     }
     const handleSubmit= (e) => {
@@ -45,32 +62,31 @@ export function BookingForm (props) {
     navigate("/Confirmation");
   }
     return (
+        <>
+        <h1 id='book-h1' >Make Your Reservation</h1>
         <form className='booking-form'
             onSubmit={handleSubmit}>
+            <>
             <label htmlFor='date' >Choose date</label>
             <input
                 type='date'
                 id='date'
                 value={form.date}
                 onChange={handleDateChange}
+                onBlur={()=>{
+                    setForm({
+                        ...form, isTouched:true
+                    })
+                }}
                  />
+                 {form.isTouched ?(<DateErrorMessage/>):null}
+            </>
             <label htmlFor='time' >Choose time</label>
             <select id="time" required>
                 {finalTime}
             </select>
-            {/* <select
-                value={form.time}
-                id='res-time'
-                onChange={finalTime}>
-                <option value="17" >17.00</option>
-                <option value="18" >18.00</option>
-                <option value="19" >19.00</option>
-                <option value="20" >20.00</option>
-                <option value="21" >21.00</option>
-                <option value="22" >22.00</option>
-            </select> */}
             <label htmlFor='guests' >Number of guests</label>
-            <input
+            <input 
                 value={form.number}
                 type='number'
                 placeholder='1'
@@ -81,6 +97,7 @@ export function BookingForm (props) {
                         ...form, number: e.target.value
                     })
                 }}/>
+            <label htmlFor='occasion' >Occasion</label>
             <select 
                 value={form.type} 
                 id='occasion' onChange={e =>{
@@ -92,13 +109,55 @@ export function BookingForm (props) {
                 <option value="birthday" >Birthday</option>
                 <option value="anniversary">Anniversary</option>
             </select>
+            <label htmlFor='name' >Name<sup>*</sup> </label>
+            <input 
+                value={form.name}
+                type='text'
+                id='name' 
+                onChange={e =>{
+                    setForm({
+                        ...form, name: e.target.value
+                    })
+                }}/>
+            <label htmlFor='surname' >Surname</label>
+            <input 
+                value={form.surname}
+                type='text'
+                id='surname' 
+                onChange={e =>{
+                    setForm({
+                        ...form, surname: e.target.value
+                    })
+                }}/>
+                <label htmlFor='phone' >Phone number<sup>*</sup> </label>
+            <input 
+                value={form.phone}
+                type='tel'
+                id='phone'
+                placeholder='+90500000000'
+                onChange={e =>{
+                    setForm({
+                        ...form, phone: e.target.value
+                    })
+                }}/>
+                <label htmlFor='guests' >Email address<sup>*</sup> </label>
+            <input 
+                value={form.email}
+                type='email'
+                placeholder='example@gmail.com'
+                id='email' 
+                onChange={e =>{
+                    setForm({
+                        ...form, email: e.target.value
+                    })
+                }}/>
             <button 
                 style={{
                     borderRadius:"10px",
                     maxWidth:"200px",
                     margin:"auto",
-                    marginTop:"-1%",
-                    height:"120%"
+                    marginTop:"3%",
+                    height:"65%"
                 }}
                 type='submit' 
                 disabled={!getIsFormValid ()}
@@ -106,5 +165,6 @@ export function BookingForm (props) {
             >Reserve
             </button>
         </form>
+        </>
     )
 }
