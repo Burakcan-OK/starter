@@ -1,8 +1,7 @@
 import '../../App.css';
 import { Link } from "react-router-dom";
 import food from "../../assets/food.jpg"
-import { BookingForm } from './BookingForm';
-export default function Confirmation(props){
+function Confirmation(){
     return(
         <header className="confirmation-header" >
             <img src={food} alt="" className='confirmation-image'></img>
@@ -19,3 +18,4 @@ export default function Confirmation(props){
         </header>
     )
 }
+export default Confirmation;
