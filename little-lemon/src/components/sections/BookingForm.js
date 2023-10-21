@@ -20,7 +20,7 @@ export function BookingForm (props) {
         isTouched: false
     })
     const getIsFormValid = () => {
-        return(form.date &&  form.type !=="type" 
+        return(form.date &&  form.type !=="type"
                && form.name && form.surname && validateEmail(form.email)
         )
     }
@@ -134,7 +134,7 @@ export function BookingForm (props) {
                 value={form.phone}
                 type='tel'
                 id='phone'
-                placeholder='+90500000000'
+                placeholder="(xxx)-xxx-xxxx"
                 onChange={e =>{
                     setForm({
                         ...form, phone: e.target.value
@@ -151,6 +151,7 @@ export function BookingForm (props) {
                         ...form, email: e.target.value
                     })
                 }}/>
+                {}
             <button 
                 style={{
                     borderRadius:"10px",

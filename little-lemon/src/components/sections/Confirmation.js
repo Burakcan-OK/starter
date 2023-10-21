@@ -1,7 +1,8 @@
 import '../../App.css';
 import { Link } from "react-router-dom";
 import food from "../../assets/food.jpg"
-export default function Confirmation(){
+import { BookingForm } from './BookingForm';
+export default function Confirmation(props){
     return(
         <header className="confirmation-header" >
             <img src={food} alt="" className='confirmation-image'></img>
