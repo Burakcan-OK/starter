@@ -79,7 +79,9 @@ export function BookingForm (props) {
                     })
                 }}
                  />
-                 {form.isTouched ?(<DateErrorMessage/>):null}
+                 {form.isTouched && form.date === ""
+                 ?(<DateErrorMessage/>)
+                 :null}
             </>
             <label htmlFor='time' >Choose time</label>
             <select id="time" required>
